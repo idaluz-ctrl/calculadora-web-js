@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  width: 420px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grupo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.correcto {
+  color: green;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.invalido {
+  border: 2px solid red;
+}
+
+.valido {
+  border: 2px solid green;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+#mensajeGeneral {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
