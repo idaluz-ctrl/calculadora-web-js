@@ -24,5 +24,10 @@ Un formulario de registro de usuarios que valida los datos en tiempo real mientr
 ## 🚀 Cómo probar los proyectos
 No necesitas instalar nada. Simplemente puedes descargar este repositorio o clonarlo, y abrir el archivo `index.html` (ubicado dentro de la carpeta `calculadora` o `formulario`) en tu navegador web favorito.
 
+## 🌐 Demo en vivo
+Puedes probar los proyectos funcionando directamente en tu navegador aquí:
+- [Calculadora Interactiva](https://idaluz-ctrl.github.io/calculadora-web-js/calculadora/)
+- [Formulario de Registro](https://idaluz-ctrl.github.io/calculadora-web-js/formulario/)
+
 ---
 *Desarrollado con 💻 por Ida luz Cabana Mendez
