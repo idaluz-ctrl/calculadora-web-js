@@ -1,79 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenedor {
-  width: 420px;
-  margin: 40px auto;
+  width: 100%;
+  max-width: 400px;
   background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
 
 .grupo {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #999;
-  border-radius: 6px;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  outline: none;
 }
 
+input:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 8px rgba(118, 75, 162, 0.2);
+}
+
+/* Mensajes de error y éxito */
 .error {
-  color: red;
-  font-size: 14px;
-  margin-top: 4px;
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
 }
 
 .correcto {
-  color: green;
-  font-size: 14px;
-  margin-top: 4px;
+  color: #2ecc71;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
 }
 
+/* Clases que aplica tu JS */
 .invalido {
-  border: 2px solid red;
+  border-color: #e74c3c;
+  background-color: #fdf2f2;
 }
 
 .valido {
-  border: 2px solid green;
+  border-color: #2ecc71;
+  background-color: #f2fcf5;
 }
 
+/* Botón */
 button {
   width: 100%;
-  padding: 12px;
-  background: #0078d4;
+  padding: 15px;
+  background: #764ba2;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
 }
 
 button:hover {
-  background: #005fa3;
+  background: #5a387d;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 #mensajeGeneral {
   text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
+  margin-top: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#mensajeGeneral.error {
+  background-color: #fdf2f2;
+  color: #e74c3c;
+}
+
+#mensajeGeneral.correcto {
+  background-color: #f2fcf5;
+  color: #2ecc71;
 }
